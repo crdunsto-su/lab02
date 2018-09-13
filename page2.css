@@ -1,0 +1,40 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+	header {
+		background-color: rgb(224, 68, 47);
+		height: 100px;
+		/* flex: 0 1 100px; */
+	}
+
+	#content {
+		background-color: rgb(255, 255, 255);
+		flex: 1;
+		display: flex;
+	}
+		#content section{
+			margin: 10px;
+			background-color: rgb(240, 240, 240);
+			border: 2px lightgray solid;
+		}
+		#content section.left{
+			flex: 1;
+		}
+		#content section.right{
+			width: 25%;
+		}
+
+	footer {
+		background-color: rgb(26, 25, 22);
+		height: 200px;
+		/* flex: 0 1 200px; */
+	}
